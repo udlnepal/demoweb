@@ -8,30 +8,34 @@
 	<div class="col-lg-3">
 	</div>
 	<div class="col-lg-6 jumbotron text-center">
-<form action="http://[::1]/demoweb/login" name="loginform" method="post" accept-charset="utf-8">
+<form>
 
 			<div class="input-group mar-5-top">
 				<span class="input-group-addon">
-					Username:
+					Name:
 				</span>
-				<input class="form-control" name="email" placeholder="Email-ID" type="text"> 
+				<input class="form-control" name="firstname" placeholder="First Name" type="text"> 
 			</div>
 			<span style="color:red"></span>
+			<div class="input-group mar-5-top">
+				<span class="input-group-addon">
+					Email:
+				</span>
+				<input class="form-control" name="email" placeholder="Email" type="text"> 
+			</div>
+
 			<div class="input-group mar-5-top">
 				<span class="input-group-addon">
 					Password:
 				</span>
 				<input class="form-control" name="password" placeholder="Password" type="password"> 
 			</div>
-			<span style="color:red"></span>
 			<div class="col-lg-12 mar-5-top text-right pad_fix">
-				<button class="btn btn-success" type="submit">Login</button>
+				<button class="btn btn-success" type="submit">Sign Up</button>
 			</div>
 			<div class="col-lg-12 mar-5-top">
 				<p style="color:green; font-style:bold"></p>
-<p style="color:red; font-style:bold"></p>
-
-				
+<p style="color:red; font-style:bold"></p>				
 			</div>
 </form>	
 		
@@ -42,7 +46,7 @@
 </div>
 <div class="row text-center mar-175-btm">
 
-<h4 class="text-center">Is it your first time here?<br> Please <a href="register">Register</a> First!</h4>
+<h4 class="text-center">Already a member?<br> Please <a href="login">Login</a> Here!</h4>
 	</div>
 </div>
 </div>
