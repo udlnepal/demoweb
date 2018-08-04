@@ -8,24 +8,7 @@ class Login extends CI_Controller {
         $this->load->library(array('session', 'form_validation'));
     }
 
-	/*  public function index()
-    {
-        //print_r($data);
-        //exit();
-      //  $data['news'] = $this->news_model->get_news();
-      //  $data['title'] = 'News archive';
-
-
-        $this->load->view('includes/adminheader');
-   //     $this->load->view('includes/adminsidebar');
-     //   $this->load->view('includes/adminnav');
-
-        $this->load->view('admin/login');
-      //  print_r($data); exit;
-        $this->load->view('includes/adminfooter');
-    }
-*/
-
+	
      public function index()
     {        
         $email = $this->input->post('email');

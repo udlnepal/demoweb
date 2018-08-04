@@ -8,28 +8,37 @@
 	<div class="col-lg-3">
 	</div>
 	<div class="col-lg-6 jumbotron text-center">
-<form>
+<?php $attributes = array("name" => "registrationform");
+echo form_open("register", $attributes);?>
 
 			<div class="input-group mar-5-top">
 				<span class="input-group-addon">
 					Name:
 				</span>
-				<input class="form-control" name="firstname" placeholder="First Name" type="text"> 
+				<input class="form-control" name="firstname" placeholder="Name" type="text" value="<?php echo set_value('firstname'); ?>" />
 			</div>
-			<span style="color:red"></span>
+			<span style="color:red"><?php echo form_error('firstname'); ?></span>
 			<div class="input-group mar-5-top">
 				<span class="input-group-addon">
 					Email:
 				</span>
-				<input class="form-control" name="email" placeholder="Email" type="text"> 
+				<input class="form-control" name="email" placeholder="Email" type="text" value="<?php echo set_value('email'); ?>" /> 
 			</div>
-
+			<span style="color:red"><?php echo form_error('email'); ?></span>
 			<div class="input-group mar-5-top">
 				<span class="input-group-addon">
 					Password:
 				</span>
-				<input class="form-control" name="password" placeholder="Password" type="password"> 
+				<input class="form-control" name="password" placeholder="Password" type="password" value="<?php echo set_value('password'); ?>" />
 			</div>
+			<span style="color:red"><?php echo form_error('password'); ?></span>
+				<div class="input-group mar-5-top">
+				<span class="input-group-addon">
+					Confirm Password:
+				</span>
+				<input class="form-control" name="cpassword" placeholder="Confirm Password" type="password" value="<?php echo set_value('cpassword'); ?>" />
+			</div>
+			<span style="color:red"><?php echo form_error('cpassword'); ?></span>
 			<div class="col-lg-12 mar-5-top text-right pad_fix">
 				<button class="btn btn-success" type="submit">Sign Up</button>
 			</div>
@@ -37,7 +46,7 @@
 				<p style="color:green; font-style:bold"></p>
 <p style="color:red; font-style:bold"></p>				
 			</div>
-</form>	
+<?php echo form_close(); ?>
 		
 
 	</div>
