@@ -1,5 +1,5 @@
 <?php
-class Site extends CI_Controller {
+class Social_links extends CI_Controller {
    public function __construct()
     {
         parent::__construct();
@@ -10,19 +10,24 @@ class Site extends CI_Controller {
         $this->load->library('pagination');
         $this->load->helper(array('form', 'url'));/* form froms*/
     }
-
-	  public function index()
+  public function index()
     {
-        //print_r($data);
-        //exit();
-      //  $data['news'] = $this->news_model->get_news();
-      //  $data['title'] = 'News archive';
+        
+   if ($this->session->userdata('is_logged_in')) {
 
     $data['header_title'] = $this->set_header_model->get_header_title();
-        $this->load->view('includes/header',$data);
-        $this->load->view('site/home');
-      //  print_r($data); exit;
-        $this->load->view('includes/footer');
+        $this->load->view('includes/adminheader');
+        $this->load->view('includes/adminsidebar');
+        $this->load->view('includes/adminnav');
+        $this->load->view('admin/social',$data);  
+        $this->load->view('includes/adminfooter');
     }
+ 
+  else { 
+ redirect('login');  
+
+  }
 }
-?>
+
+/* write above here */
+}

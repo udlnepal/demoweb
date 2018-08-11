@@ -9,16 +9,16 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="site" class="simple-text">
+                <a href="site" class="simple-text" target="_blank">
                     Goto Site
                 </a>
             </div>
 
             <ul class="nav">
                 <li class="active">
-                    <a href="dashboard.html">
+                    <a href="admin">
                         <i class="pe-7s-graph"></i>
-                        <p>Dashboard</p>
+                        <p>Header Setup</p>
                     </a>
                 </li>
                 <li>
@@ -52,9 +52,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="notifications.html">
+                    <a href="social_links">
                         <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
+                        <p>Social Links</p>
                     </a>
                 </li>
 				<li class="active-pro">

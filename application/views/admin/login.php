@@ -13,14 +13,14 @@
 echo form_open("login", $attributes);?>
 
 			<div class="input-group mar-5-top">
-				<span class="input-group-addon">
+				<span class="input-group-addon bg-info">
 					Username:
 				</span>
 				<input class="form-control" name="email" placeholder="Email-ID" type="text" /> 
 			</div>
 			<span style="color:red"><?php echo form_error('email'); ?></span>
 			<div class="input-group mar-5-top">
-				<span class="input-group-addon">
+				<span class="input-group-addon bg-info">
 					Password:
 				</span>
 				<input class="form-control" name="password" placeholder="Password" type="password" /> 

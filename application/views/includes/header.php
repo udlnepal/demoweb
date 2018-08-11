@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>YupNep 999Rs Sample Site</title>
-
+<?php foreach($header_title as $ht): ?>
+    <title><?php echo $ht['site_title'];?>&nbsp<?php echo $ht['add_info'];  ?></title>
+<?php endforeach;?>
     <!-- Bootstrap Core CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -31,7 +31,9 @@
     
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#">YupNep</a>
+  <?php foreach($header_title as $ht): ?>
+  <a class="navbar-brand" href="#"><?php echo $ht['site_title'];?></a>
+<?php endforeach; ?>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

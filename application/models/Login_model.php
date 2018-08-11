@@ -29,7 +29,7 @@ class Login_model extends CI_Model {
     {
         $data = array(
             'firstname' => $this->input->post('firstname'),
-            'lastname' => $this->input->post('lastname'),
+          //  'lastname' => $this->input->post('lastname'),
             'email' => $this->input->post('email'),
             'password' => md5($this->input->post('password')),
             'updated_at' => date('Y-m-d H:i:s')

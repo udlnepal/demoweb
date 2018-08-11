@@ -1071,7 +1071,7 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .input-group-addon {
-    background-color: #FFFFFF;
+  /*  background-color: #FFFFFF; commented by sumit*/
     border: 1px solid #E3E3E3;
     border-radius: 4px;
 }
