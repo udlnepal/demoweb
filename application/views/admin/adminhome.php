@@ -6,7 +6,7 @@
                          <div class="card">
                             <div class="header">
                                 <h4 class="title">Header and Navigation(Menu) Setup</h4>
-                                <?php echo form_open('admin/set_site_title'); ?>
+                                <?php echo form_open('admin/site_title_setup/set_site_title'); ?>
                                <div class="input-group bg-info">
                                 <span class="input-group-addon" style="min-width: 238px;">Site Title:</span>
                                    <?php foreach ($header_title as $ht): ?>

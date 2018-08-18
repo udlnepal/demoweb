@@ -24,5 +24,6 @@ class Site extends CI_Controller {
       //  print_r($data); exit;
         $this->load->view('includes/footer');
     }
+
 }
 ?>
