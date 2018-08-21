@@ -47,7 +47,7 @@
                         <li><a href=""><p>Welcome !</p></a></li>
                         <li>
                            <a href="">
-                               <p><?php echo $this->session->userdata('email'); ?></p>
+                               <p><?php echo /*$this->session->userdata('email');*/ $titlename; ?></p>
                             </a>
                         </li>
                         <!-- <li class="dropdown">

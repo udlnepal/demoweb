@@ -19,7 +19,8 @@ class Site_title_setup extends Admin_controller {
     }*/
 
 	  public function index()
-    {        
+    {       
+    $data['titlename']=$this->user_model->get_logged_user(); 
     $data['header_title'] = $this->set_header_model->get_header_title();
       $this->display('admin/adminhome',$data);  
    

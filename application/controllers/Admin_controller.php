@@ -5,6 +5,7 @@ class Admin_controller extends CI_Controller {
         parent::__construct();
         $this->load->model('login_model');
         $this->load->model('set_header_model');
+        $this->load->model('user_model');
         $this->load->helper('url_helper');
         $this->load->library('session');
         $this->load->library('pagination');
